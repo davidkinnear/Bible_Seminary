@@ -1,0 +1,1001 @@
+*{
+    margin:0;
+}
+body{
+    overflow-x: hidden;
+}
+:root {
+    --gold: #bc9360;
+    --navy: #0c3d6c;
+  }
+/*side nav start*/
+#side_nav{
+    height:100vh;
+    width:100vw;
+    background-color: var(--gold);
+    display: none;
+    flex-direction: column;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#close{
+    color:black;
+    font-size: xx-large;
+    margin-bottom:20px;
+    margin-top:-8px;
+    margin-left:80%;
+}
+#close:hover{
+    cursor: pointer;
+}
+.side_nav_link{
+    border:1px solid white;
+    padding:5px 20px;
+    transition: .5s;
+}
+.side_nav_link a{
+    text-decoration: none;
+    color:white;
+}
+.side_nav_link:hover{
+    cursor: pointer;
+    background-color: var(--navy);
+}
+/*side nav end*/
+/*nav start*/
+.nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 30px
+}
+.nav_menu{
+    display:flex;
+}
+.nav_menu div{
+    margin:0 10px;
+    transition: .5s;
+}
+.nav_menu div a{
+    text-decoration: none;
+    color:black;
+}
+.fa-bars{
+    font-size: x-large;
+}
+.fa-bars:hover{
+    cursor: pointer;
+}
+
+/*nav end*/
+/*hero start*/
+.hero{
+    position: relative;
+    text-align: center;
+}
+.overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(160, 58, 58, 0.5); /* Black background with opacity */
+    z-index: 2;
+}
+.hero_img{
+    background: linear-gradient(175deg, #0d2244e6 50%, #0d2244ed 100%, transparent 90%), url("https://ml6tkpqelpjj.i.optimole.com/wXWDr6A-yR5ZzAxy/w:auto/h:auto/q:auto/https://www.gbtseminary.org/wp-content/themes/gbts-website/images/seminary-1.jpg");
+    width:100vw;
+    height:60vh;
+    object-fit:cover;
+}
+.hero_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+.hero_text div{
+    margin-bottom: 20px;
+}
+.hero_title{
+    font-size: xx-large;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeDown .5s forwards;
+    animation-delay: .5s;
+}
+.hero_sub_title{
+    font-size: large;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: .5s;
+}
+.hero_button{
+    font-size:medium;
+    padding: 10px;
+    color: white;
+    width:120px;
+    margin-top: 20px;
+    background-color:var(--gold);
+    border:none;
+    transition: .5s;
+}
+.hero_button:hover{
+    background-color: white;
+    color:var(--gold);
+    cursor: pointer;
+}
+/*hero end*/
+/*welcome start*/
+.welcome{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom:100px;
+}
+.welcome_title{
+    text-align: center;
+    font-size: 40px;
+    color:var(--navy);
+    margin:20px;
+    font-weight: bold;
+}
+.welcome_line hr{
+    color:lightgray;
+}
+.welcome_sub_title{
+    text-align: center;
+    font-size: 20px;
+    margin:20px;
+    color:var(--gold);
+}
+.welcome_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px;
+    margin-bottom:12px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:12px;
+    box-shadow: 10px 10px 10px 10px #E8E8E8;
+    transition: .5s;
+}
+.welcome_card:hover{
+    background-color: #E8E8E8;
+    box-shadow: 10px 10px 10px 10px #DCDCDC;
+}
+.welcome_card h1{
+    text-align: center;
+    color:var(--navy);
+    border: dotted 1px var(--gold);
+    padding:20px;
+    font-weight: lighter;
+}
+.welcome i{
+    text-align:center;
+    color:var(--gold);
+    font-size: 40px;
+    margin-top: 20px;
+}
+/*welcome end*/
+/*purpose start*/
+.purpose{
+    position: relative;
+    text-align: center;
+}
+.purpose_img{
+    background-image: linear-gradient(105deg, rgb(188, 147, 96) 0%, rgba(182, 151, 108, 0.85) 100%, transparent 50%), url(https://ml6tkpqelpjj.i.optimole.com/wXWDr6A-7bD_8Sfa/w:auto/h:auto/q:auto/https://www.gbtseminary.org/wp-content/themes/gbts-website/images/seminary-2.jpg);
+    width:100vw;
+    height:60vh;
+    object-fit:cover;
+}
+.purpose_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+.purpose_text div{
+    margin-bottom:25px;
+}
+.purpose_title{
+    font-size:50px;
+}
+.purpose_line hr{
+    color:var(--navy);
+}
+.purpose_sub_title{
+    font-size: 20px;
+}
+.purpose_button{
+    background-color: var(--navy);
+    padding:10px;
+    color:white;
+    border:none;
+    width:100px;
+    transition: .5s;
+}
+.purpose_button:hover{
+    background-color:white;
+    color:var(--navy);
+    cursor: pointer;
+}
+/*purpose end*/
+/*beliefs start*/
+.beliefs{
+    position: relative;
+    text-align: center;
+}
+.beliefs img{
+    width:100vw;
+    height:60vh;
+    object-fit:cover;
+    filter: opacity(5%);
+}
+.beliefs_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.beliefs_text div{
+    margin-bottom:30px;
+}
+.beliefs_title{
+    font-size: 40px;
+    color:var(--gold);
+}
+.beliefs_sub_title{
+    font-size:20px;
+}
+.beliefs_button{
+    color:var(--gold);
+    border:solid 2px var(--gold);
+    width:100px;
+    padding:10px;
+    font-size: 15px;
+    transition: .5s;
+}
+.beliefs_button:hover{
+    background-color: var(--gold);
+    color:white;
+    cursor: pointer;
+}
+/*beliefs end*/
+/*program start*/
+.program{
+    position: relative;
+    text-align: center;
+}
+.program img{
+    width:100vw;
+    height:25vh;
+    object-fit:cover;
+    filter: brightness(30%);
+}
+.program_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.program_text div{
+    margin-bottom:20px;
+}
+.program_title{
+    font-size: 30px;
+    color:white;
+}
+.program_sub_title{
+    font-size:20px;
+    color:white
+}
+.program_sub_title span{
+    font-size:20px;
+    color:var(--gold);
+}
+.program_sub_title span:hover{
+    cursor: pointer;
+}
+/*program end*/
+/*shepherds start*/
+.shepherds{
+    position: relative;
+    text-align: center;
+}
+.shepherds img{
+    width:100vw;
+    height:65vh;
+    object-fit:cover;
+    filter: opacity(5%);
+}
+.shepherds_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.shepherds_text div{
+    margin-bottom:30px;
+}
+.shepherds_title{
+    font-size: 30px;
+    color:var(--navy);
+}
+.shepherds_sub_title{
+    font-size:20px;
+    color:black;
+}
+.shepherds_button{
+    color:var(--gold);
+    border:solid 2px var(--gold);
+    width:120px;
+    padding:10px;
+    font-size: 15px;
+    transition: .5s;
+}
+.shepherds_button:hover{
+    background-color: var(--gold);
+    color:white;
+    cursor: pointer;
+}
+/*shepherds end*/
+/*footer start*/
+.footer{
+    display:flex;
+    flex-direction: column;
+    background-color: #0d2244;
+    color:white;
+    align-items: center;
+    padding-top:25px;
+}
+.footer img{
+    width:200px;
+    
+}
+.footer_links_container{
+    display:flex;
+}
+.footer_links{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_links h1{
+    margin-top:10px;
+    margin-left: 30px;
+    margin-right:30px;
+}
+.footer_links h1:hover{
+    cursor: pointer;
+}
+.footer_socials{
+    font-size: xx-large;
+    margin:50px;
+}
+.footer_socials i{
+    margin:5px;
+}
+.footer_socials i:hover{
+    cursor: pointer;
+}
+/*footer end*/
+/*media queries*/
+@media screen and (min-width: 900px){
+    .welcome_card{
+        width:25vw;
+        height:25vh;
+    }
+    .welcome_card_container{
+        display:flex;
+        justify-content: center;
+    }
+    .fa-bars{
+        display:none;
+    }
+    .nav{
+        justify-content: space-evenly;
+    }
+    .nav_menu div:hover{
+        cursor: pointer;
+        color:var(--navy);
+    }
+    .hero img{
+        height:70vh;
+    }
+    .hero_title{
+        font-size: 50px;
+    }
+    .hero_sub_title{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .shepherds img{
+        height:70vh;
+    }
+    .program img{
+        height:30vh;
+    }
+    .purpose img{
+        height:70vh;
+    }
+}
+@media screen and (max-width: 900px){
+    .nav_menu{
+        display:none;
+    }
+}
+/*keyframes*/
+@keyframes fadeUp {
+    0%{
+        transform: translateY(4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) ;
+    }
+} 
+
+@keyframes scale {
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) ;
+    }
+}
+
+@keyframes grow {
+    0%{
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes fadeDown {
+    0%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) ;
+    }
+} 
+
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes up {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+}
+
+
+.touch{
+    height:80vh;
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.85) 30%, rgba(255, 255, 255, 0.85) 100%, #ffffff 90%), url("https://ml6tkpqelpjj.i.optimole.com/wXWDr6A-C6fqVNyd/w:auto/h:auto/q:auto/https://www.gbtseminary.org/wp-content/themes/gbts-website/images/green-wall.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+.touch_title{
+    text-align: center;
+    padding-top:100px;
+    font-size: 50px;
+}
+.touch_container{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:80px;
+}
+.touch_card{
+    background-color: #0d2244;
+    height:275px;
+    width:275px;
+    border-radius: 999px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.touch_card_content{
+    margin-left:40px;
+    margin-right:40px;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+.touch_card_title{
+    font-size:25px;
+}
+@media screen and (max-width: 700px){
+    .touch_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .touch_card{
+        height:215px;
+        width:215px;
+        margin:20px;
+    }
+    .touch{
+        height:150vh;
+    }
+    .touch_card_content{
+        font-size:13px;
+    }
+}
+@media screen and (max-width: 900px){
+    .touch_card{
+        height:215px;
+        width:215px;
+    }
+    .touch_card_content{
+        font-size:13px;
+    }
+}
+*{
+    margin:0;
+}
+body{
+    overflow-x: hidden;
+}
+:root {
+    --gold: #bc9360;
+    --navy: #0c3d6c;
+  }
+  .admissions{
+    position: relative;
+    text-align: center;
+}
+.admissions_img{
+    background: linear-gradient(175deg, #b88852e6 50%, #a47b51cf 100%, transparent 90%), url("https://ml6tkpqelpjj.i.optimole.com/wXWDr6A-2gAUJ__M/w:auto/h:auto/q:auto/https://www.gbtseminary.org/wp-content/themes/gbts-website/images/student-admission-min.jpeg");
+    width:100vw;
+    height:70vh;
+    object-fit:cover;
+    background-position: center;
+    background-size: 100%;
+}
+.admissions_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.admissions_title{
+    color:white;
+    font-size: 70px;
+    opacity: 0;
+    animation: fadeDown .5s forwards;
+    animation-delay: .5s;
+}
+.admissions_sub_title{
+    color:white;
+    font-size: 30px;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: .5s;
+}
+.admissions_text div{
+    margin: 20px;
+}
+.admissions_line hr{
+    padding:1px;
+    background-color: var(--navy);
+}
+/*
+<div class="admissions_welcome">
+        <div class="admissions_welcome_img"></div>
+        <div class="admissions_welcome_text">
+            <div class="admissions_welcome_title">Welcome</div>
+            <div class="admissions_welcome_sub_title">As a prospective student, we invite you to get the know GBTS.</div>
+        </div>
+*/
+.admissions_welcome{
+    position: relative;
+    text-align: center;
+}
+.admissions_welcome_img{
+    background:linear-gradient(175deg, #0d2244f0 50%, #0d2244 100%, transparent 90%), url("https://ml6tkpqelpjj.i.optimole.com/wXWDr6A-J7a5Eaki/w:auto/h:auto/q:auto/https://www.gbtseminary.org/wp-content/themes/gbts-website/images/nettles-bg.jpg");
+    width:100vw;
+    height:20vh;
+    object-fit:cover;
+    background-position: center;
+    background-size: 100%;
+}
+.admissions_welcome_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+.admissions_welcome_title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom:10px;
+}
+.admissions_welcome_sub_title{
+    font-size: 20px;
+}
+/*<div class="apply">
+        <div class="apply_top">
+        <div class="apply_title"></div>
+        <div class="apply_line"><hr></div>
+        <div class="apply_sub_title"></div>
+        </div>
+    </div>
+*/
+.apply{
+    
+}
+.apply_top{
+    margin-left:180px;
+    padding-top:100px;
+}
+.apply_title{
+    font-size: 40px;
+    width:80vw;
+    color:var(--navy);
+}
+.apply_line hr{
+    padding:1px;
+    width:70vw;
+    background-color: lightgray;
+    border:none;
+}
+.apply_sub_title{
+    color:var(--gold);
+    font-size:25px;
+}
+.apply_top div{
+    margin:20px;
+}
+/*<div class="requirements">
+            <div class="requirements_title"></div>
+            <div class="requirements_statement"></div>
+            <div class="requirements_statement"></div>
+            <div class="requirements_statement"></div>
+            <div class="requirements_statement"></div>
+            <div class="requirements_statement"></div>
+        </div>
+    </div>
+*/
+.requirements{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    margin-left:180px;
+    margin-right:180px;
+}
+.requirements_title{
+    font-size:20px;
+    margin-left:10px;
+    margin-bottom:20px;
+}
+.requirements_statement{
+    display: flex;
+    font-size:20px;
+    margin:10px;
+}
+.requirements_statement i{
+    color:var(--gold);
+    margin-right:20px;
+}
+
+.paths{
+    position: relative;
+    text-align: center;
+}
+.paths_img{
+    background:linear-gradient(175deg, #0d2244f0 50%, #0d2244 100%, transparent 90%), url("https://ml6tkpqelpjj.i.optimole.com/wXWDr6A-4FCMT5tg/w:auto/h:auto/q:auto/https://www.gbtseminary.org/wp-content/themes/gbts-website/images/bible-coffee-phone-min.jpeg");
+    width:100vw;
+    height:30vh;
+    object-fit:cover;
+    background-position: center;
+    background-size: 100%;
+}
+.paths_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
+.paths_title{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+.paths_sub_title{
+    font-size: 25px;
+    margin-bottom:30px;
+}
+.paths_button{
+    background-color: var(--gold);
+    border:none;
+    color:white;
+    padding:10px;
+    font-size: 15px;
+    transition: .5s;
+}
+.paths_button:hover{
+    background-color:white;
+    color:var(--gold);
+    cursor: pointer;
+}
+/*
+ <div class="admissions_cards_container">
+        <div class="admissions_cards_img"></div>
+        <div class="admissions_card">
+            <i class="fas fa-bible"></i>
+            <div class="admissions_card_title">Master of Pastoral Studies (MAPS)</div>
+            <div class="admissions_card_text">Master/Diploma of Ministry in Pastoral Studies - Whether you are serving in missions, church planting or an existing local church you will be pastoring. This 48 hour program is designed to provide essential training for ministry in various context.</div>
+            <div class="admissions_card_button">Learn More</div>
+        </div>
+        <div class="admissions_card">
+            <i class="fas fa-bible"></i>
+            <div class="admissions_card_title">Master of Pastoral Studies (MAPS)</div>
+            <div class="admissions_card_text">Master/Diploma of Ministry in Pastoral Studies - Whether you are serving in missions, church planting or an existing local church you will be pastoring. This 48 hour program is designed to provide essential training for ministry in various context.</div>
+            <div class="admissions_card_button">Learn More</div>
+        </div>
+    </div>
+*/
+.admissions_cards_container{
+    position: relative;
+    text-align: center;
+}
+.admissions_cards_img{
+    background: linear-gradient(175deg, rgba(255, 255, 255, 0.7) 100%, rgb(255, 255, 255) 0%, transparent 90%), url("https://ml6tkpqelpjj.i.optimole.com/wXWDr6A-nbVmyfbX/w:auto/h:auto/q:auto/https://www.gbtseminary.org/wp-content/themes/gbts-website/images/nettles-lecture-min.jpg");
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+    background-position: center;
+}
+.admissions_card1{
+    background-color: white;
+    height:43vh;
+    width:90vw;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:2px solid var(--navy);
+}
+.admissions_card2{
+    background-color: white;
+    height:43vh;
+    width:90vw;
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border:2px solid var(--navy);
+}
+.admissions_card_container{
+    display:flex;
+    flex-direction: column;
+}
+.admissions_card_container i{
+    margin:20px;
+    font-size: 40px;
+    color:var(--gold);
+}
+.admissions_card_title{
+    font-size: 30px;
+}
+.admissions_card_text{
+    font-size:20px;
+    margin-left:50px;
+    margin-right:50px;
+}
+.admissions_card_button{
+    padding:10px;
+    background-color: var(--gold);
+    width:100px;
+    margin-left:auto;
+    margin-right:auto;
+    transition: .5s;
+}
+.admissions_card_button:hover{
+    background-color:white;
+    border:1px solid var(--gold);
+    color:var(--gold);
+    cursor: pointer;
+}
+.admissions_card_container div{
+    margin-bottom:20px;
+}
+
+
+
+@media screen and (min-width: 900px){
+    .admissions_welcome_img{
+        height:40vh;
+    }
+    .paths_img{
+        height:40vh;
+    }
+}
+@media screen and (max-width: 900px){
+    .apply_top{
+        margin-left:50px;
+    }
+    .requirements{
+        margin-left:50px;
+    }
+}
+@media screen and (max-width: 600px){
+    .admissions_card_title{
+        font-size: 25px;
+    }
+    .admissions_card_text{
+        font-size:15px;
+        margin-left:50px;
+        margin-right:50px;
+    }
+    .admissions_card_button{
+        padding:5px;
+        background-color: var(--gold);
+        width:100px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .admissions_card_container div{
+        margin-bottom:20px;
+    }
+    
+}
+.grace_img{
+    background:linear-gradient(175deg, rgb(255, 255, 255) 65%, rgba(225, 225, 225, 0.5) 100%, transparent 90%), url("https://ml6tkpqelpjj.i.optimole.com/wXWDr6A-5J2weHnj/w:auto/h:auto/q:auto/https://www.gbtseminary.org/wp-content/themes/gbts-website/images/church-sky.jpeg");
+    width:100vw;
+    height:60vh;
+    object-fit:cover;
+    background-position: center;
+    background-size: 100%;
+}
+.grace{
+    position: relative;
+    text-align: center;
+}
+.grace_text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grace_button{
+    padding:12px;
+    font-size: 20px;
+    border:2px solid var(--gold);
+    background-color: var(--gold);
+    color:white;
+    text-align: center;
+    transition: .5s;
+}
+.grace_button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border:1px solid var(--gold);
+    color:var(--gold);
+}
+.grace_logo{
+    
+}
+/*
+<div class="blog_row">
+        <div class="blog_card">
+            <img class="blog_img" src="https://ml6tkpqelpjj.i.optimole.com/wXWDr6A-PPMUNyxh/w:472/h:635/q:auto/https://www.gbtseminary.org/wp-content/uploads/2020/10/MG_PillarandGround_COVER_PRINTcopy.png">
+            <div class="blog_title">A Reflection on The Church: Pillar and Ground of the Truth Documentary</div>
+            <div class="blog_sub_title">The following is my reflection on The Church: The Pillar and Ground of the Truth by Media Gratiae. This isn’t a review, I am biased. Jeff Johnson, the author and host, is the preaching pastor of Grace Bible Church, President of the seminary and a friend. I should also add that I am comically included […]</div>
+            <button class="blog_button">Continue reading »</button>
+        </div>
+*/
+.blog_container{
+    display: flex;
+    flex-direction: column;
+    padding-top:50px;
+    padding-bottom:50px;
+    align-items: center;
+}
+.blog_row{
+    display: flex;
+}
+.blog_card{
+    width:450px;
+    border:1px solid lightgray;
+    margin:20px;
+}
+.blog_img{
+    width:450px;
+    height:250px;
+    object-fit: cover;
+    transition: .5s;
+}
+.blog_img:hover{
+    cursor: pointer;
+}
+.blog_title{
+    padding:10px 20px;
+    font-size:25px;
+    margin-top:20px;
+    color:var(--navy);
+    transition: .5s;
+}
+.blog_title:hover{
+    cursor: pointer;
+    color:var(--gold);
+}
+.blog_sub_title{
+    padding:10px 20px;
+    font-size: 15px;
+}
+.blog_button{
+    background-color: var(--gold);
+    border:none;
+    color:white;
+    padding:10px;
+    margin:10px 20px;
+    margin-bottom:20px;
+    transition: .5s;
+}
+.blog_button:hover{
+    cursor: pointer;
+}
+.next{
+    text-align: center;
+    margin-bottom:50px;
+    font-size: 25px;
+    color:var(--navy);
+    transition: .5s;
+}
+.next:hover{
+    cursor: pointer;
+    color:var(--gold);
+}
+
+@media screen and (min-width: 900px){
+
+}
+@media screen and (max-width: 1000px){
+    .blog_row{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px){
+    
+}
